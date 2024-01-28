@@ -19,7 +19,31 @@
   color: #333;
   display: flex;
   align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
 }
+.login button {
+  font-size: 1rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  color: #333;
+  min-width: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.login button:hover,
+.login button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+}
+.login button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
 .login::after {
   content: "";
   display: inline-block;
